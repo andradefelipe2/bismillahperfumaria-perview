@@ -199,54 +199,8 @@
         </div>
     </section>
 
-    <!-- Simulador de Frete & Pagamento -->
-    <section class="py-16 bg-brand-black border-t border-brand-warm/30">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                <!-- Calculadora de Frete -->
-                <div class="p-8 rounded-3xl bg-brand-dark border border-brand-warm/40 space-y-4">
-                    <div class="flex items-center gap-3 text-brand-accent">
-                        <i data-lucide="truck" class="w-6 h-6"></i>
-                        <h3 class="text-xl font-serif font-bold text-white">Consulta de Entrega</h3>
-                    </div>
-                    <p class="text-xs text-brand-muted">Digite seu CEP para verificar opções de entrega rápida e retirada local.</p>
-                    <div class="flex gap-3">
-                        <input type="text" id="cep-input" placeholder="00000-000" maxlength="9" class="flex-1 bg-brand-black border border-brand-warm rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-accent">
-                        <button onclick="calcularFrete()" class="px-6 py-3 rounded-xl bg-brand-warm hover:bg-brand-charcoal text-white font-semibold text-sm transition-colors">Calcular</button>
-                    </div>
-                    <div id="frete-resultado" class="text-xs text-brand-accent font-medium pt-1"></div>
-                </div>
-
-                <!-- Formas de Pagamento -->
-                <div class="p-8 rounded-3xl bg-brand-dark border border-brand-warm/40 space-y-4">
-                    <div class="flex items-center gap-3 text-brand-accent">
-                        <i data-lucide="credit-card" class="w-6 h-6"></i>
-                        <h3 class="text-xl font-serif font-bold text-white">Formas de Pagamento</h3>
-                    </div>
-                    <p class="text-xs text-brand-muted">Facilidade e segurança na hora de fechar o seu pedido:</p>
-                    <div class="grid grid-cols-2 gap-4 pt-2">
-                        <div class="p-4 rounded-2xl bg-brand-black/50 border border-brand-warm/30 flex items-center gap-3">
-                            <i data-lucide="zap" class="w-5 h-5 text-brand-accent"></i>
-                            <div>
-                                <h5 class="font-bold text-white text-xs">PIX</h5>
-                                <p class="text-[10px] text-brand-muted">Aprovação imediata</p>
-                            </div>
-                        </div>
-                        <div class="p-4 rounded-2xl bg-brand-black/50 border border-brand-warm/30 flex items-center gap-3">
-                            <i data-lucide="credit-card" class="w-5 h-5 text-brand-accent"></i>
-                            <div>
-                                <h5 class="font-bold text-white text-xs">Cartão de Crédito</h5>
-                                <p class="text-[10px] text-brand-muted">Parcelamento seguro</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Sobre Section -->
-    <section id="sobre" class="py-20 bg-brand-dark border-t border-brand-warm/30">
+    <section id="sobre" class="py-20 bg-brand-black border-t border-brand-warm/30">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <div class="space-y-6">
@@ -272,80 +226,4 @@
                 <div class="bg-brand-dark p-8 rounded-3xl border border-white/10 space-y-6 text-center">
                     <div class="w-20 h-20 rounded-full bg-brand-warm/50 text-brand-accent flex items-center justify-center mx-auto">
                         <svg viewBox="0 0 24 24" class="w-10 h-10 fill-current text-emerald-500">
-                            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.124-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-serif font-bold text-white">Atendimento Personalizado</h3>
-                    <p class="text-xs text-brand-muted leading-relaxed">
-                        Dúvidas sobre qual fragrância escolher? Fale diretamente com nossa equipe pelo botão do WhatsApp flutuante.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contato / Rodapé -->
-    <section id="contato" class="py-20 bg-brand-dark border-t border-brand-warm/30">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
-            <span class="text-brand-accent text-xs font-semibold tracking-widest uppercase">Fale Conosco</span>
-            <h2 class="text-3xl font-serif font-bold text-white">Bismillah Perfumaria</h2>
-            <p class="text-brand-muted text-sm max-w-md mx-auto">
-                Faça seus pedidos e consulte novidades através do nosso canal de atendimento rápido.
-            </p>
-        </div>
-    </section>
-
-    <!-- Modal do Carrinho -->
-    <div id="cart-modal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden flex items-center justify-center p-4">
-        <div class="bg-brand-dark border border-brand-warm rounded-3xl max-w-lg w-full p-6 space-y-6 shadow-2xl relative max-h-[90vh] flex flex-col">
-            <div class="flex items-center justify-between border-b border-brand-warm pb-4">
-                <h3 class="font-serif font-bold text-xl text-white flex items-center gap-2">
-                    <i data-lucide="shopping-bag" class="w-5 h-5 text-brand-accent"></i>
-                    Seu Pedido
-                </h3>
-                <button onclick="toggleCartModal()" class="p-2 text-brand-muted hover:text-white rounded-full">
-                    <i data-lucide="x" class="w-5 h-5"></i>
-                </button>
-            </div>
-
-            <div id="cart-items-container" class="space-y-4 overflow-y-auto custom-scrollbar flex-1 pr-2 max-h-[50vh]">
-                <!-- Itens do carrinho -->
-            </div>
-
-            <div class="border-t border-brand-warm pt-4 space-y-4">
-                <div class="flex items-center justify-between text-lg font-bold text-white">
-                    <span>Total:</span>
-                    <span id="cart-total" class="text-brand-accent">R$ 0,00</span>
-                </div>
-                <button onclick="checkoutWhatsApp()" class="w-full py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-semibold text-sm transition-colors flex items-center justify-center gap-2 shadow-lg">
-                    <svg viewBox="0 0 24 24" class="w-5 h-5 fill-current">
-                        <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.124-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
-                    </svg>
-                    <span>Enviar Pedido pelo WhatsApp</span>
-                </button>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal da Lista de Desejos (Favoritos) -->
-    <div id="wishlist-modal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden flex items-center justify-center p-4">
-        <div class="bg-brand-dark border border-brand-warm rounded-3xl max-w-lg w-full p-6 space-y-6 shadow-2xl relative max-h-[90vh] flex flex-col">
-            <div class="flex items-center justify-between border-b border-brand-warm pb-4">
-                <h3 class="font-serif font-bold text-xl text-white flex items-center gap-2">
-                    <i data-lucide="heart" class="w-5 h-5 text-brand-accent"></i>
-                    Lista de Desejos
-                </h3>
-                <button onclick="toggleWishlistModal()" class="p-2 text-brand-muted hover:text-white rounded-full">
-                    <i data-lucide="x" class="w-5 h-5"></i>
-                </button>
-            </div>
-            <div id="wishlist-items-container" class="space-y-4 overflow-y-auto custom-scrollbar flex-1 pr-2 max-h-[50vh]">
-                <!-- Itens favoritos -->
-            </div>
-        </div>
-    </div>
-
-    <!-- WhatsApp Flutuante com Logo Original -->
-    <a href="https://wa.me/5511999999999" target="_blank" class="fixed bottom-6 right-6 z-45 w-14 h-14 bg-emerald-600 hover:bg-emerald-500 rounded-full shadow-2xl flex items-center justify-center transition-transform hover:scale-110 group text-white" title="Fale conosco no WhatsApp">
-        <svg viewBox="0 0 24 24" class="w-8 h-8 fill-current">
-            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.124-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.79
+                            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.
